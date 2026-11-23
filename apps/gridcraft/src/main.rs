@@ -272,7 +272,7 @@ fn main() -> eframe::Result<()> {
     // The restart helper a self-update spawns: it finishes the swap and relaunches, then exits.
     if let Some(done) = craft_update::self_update::finish(&gridcraft_ui_egui::UPDATE_APP, &std::env::args_os().skip(1).collect::<Vec<_>>()) {
         if let Err(e) = done {
-            eprintln!("GridCraft update helper failed: {e}");
+            eprintln!("Excelflow update helper failed: {e}");
             std::process::exit(1);
         }
         return Ok(());
@@ -453,7 +453,7 @@ mod packaging_tests {
         assert!(mac.iter().any(|e| e == "xlsx"), "Info.plist.in extensions not found: {mac:?}");
         assert_eq!(mac, win);
         for ext in &mac {
-            assert!(FileKind::from_path(&format!("book.{ext}")).is_some(), "GridCraft doesn't open .{ext}");
+            assert!(FileKind::from_path(&format!("book.{ext}")).is_some(), "Excelflow doesn't open .{ext}");
         }
     }
 }
