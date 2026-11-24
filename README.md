@@ -17,7 +17,7 @@ writes .xlsx natively and runs on macOS and Windows.
 - **Your files** — .xlsx is the native format: styles, themes, formulas, tables, charts, pivot tables all round-trip; CSV and TSV too
 - **500+ functions** — dynamic arrays, LET, LAMBDA, structured table references
 - **Pivot tables, charts, conditional formatting** — full spreadsheet workflow
-- **Native desktop** — macOS (Apple Silicon and Intel) and Windows x64 builds
+- **Native desktop** — macOS (Apple Silicon) and Windows x64 builds
 - **Private** — works offline; no accounts, no telemetry, no cloud
 
 ## Features
@@ -30,13 +30,14 @@ writes .xlsx natively and runs on macOS and Windows.
 
 ## Download and install
 
-Installers for macOS and Windows are available on the [latest release](https://github.com/reachneoagent-commits/excelflow/releases/latest). Excelflow is also available through the [FlowApps launcher](https://github.com/reachneoagent-commits/FlowApps-Launcher/releases/latest).
+Download the installer for your system (latest version, 0.1.0 release candidate 1). Excelflow is also available through the [FlowApps launcher](https://github.com/reachneoagent-commits/FlowApps-Launcher/releases/latest).
 
-| Platform | Installer |
+| Platform | Download |
 |---|---|
-| macOS, Apple silicon (M1 or newer) | DMG (`Excelflow-<version>-macos-arm64.dmg`) |
-| macOS, Intel | DMG (`Excelflow-<version>-macos-x64.dmg`) |
-| Windows x64 | Installer (`Excelflow-<version>-windows-x64.msi`) · Portable (`.zip`) |
+| macOS, Apple silicon (M1 or newer) | [DMG](https://github.com/reachneoagent-commits/excelflow/releases/download/v0.1.0-rc.1/excelflow-0.1.0-rc.1-macos-arm64.dmg) |
+| Windows x64 | [Portable zip](https://github.com/reachneoagent-commits/excelflow/releases/download/v0.1.0-rc.1/excelflow-0.1.0-rc.1-windows-x64-portable.zip) (unzip and run) |
+
+macOS on Intel and a Windows installer are not built yet. Older versions and checksums are on the [Releases page](https://github.com/reachneoagent-commits/excelflow/releases).
 
 The app is not code-signed with a paid certificate, so macOS and Windows warn you the first time you open it. Every release lists SHA-256 checksums to check the files against.
 
@@ -45,7 +46,7 @@ The app is not code-signed with a paid certificate, so macOS and Windows warn yo
 
 ## Supported platforms
 
-- **Desktop app:** macOS on Apple Silicon and Intel; Windows x64
+- **Desktop app:** macOS on Apple Silicon; Windows x64 (Intel Mac build planned)
 
 ## Build from source
 
