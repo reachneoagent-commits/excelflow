@@ -354,3 +354,10 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+Excelflow
+
+Excelflow is a modified version of GridCraft, made by Reach Neo as part of the FlowApps suite.
+It changes the name, icon, identifiers and links; rebrand/brand.json lists every change.
+Excelflow is not affiliated with or endorsed by the ArtCraft Team. The Excelflow name and mark
+(brand/, assets/app-icon/) are not covered by the license above.
