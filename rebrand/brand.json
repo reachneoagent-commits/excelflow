@@ -120,7 +120,8 @@
         "Excelflow",
         "",
         "Excelflow is a modified version of GridCraft, made by Reach Neo as part of the FlowApps suite.",
-        "It changes the name, icon, identifiers and links; rebrand/brand.json lists every change.",
+        "It changes the name, icon, identifiers and links and removes the Discord and ArtCraft links;",
+        "rebrand/brand.json and rebrand/patches/ list every change.",
         "Excelflow is not affiliated with or endorsed by the ArtCraft Team. The Excelflow name and mark",
         "(brand/, assets/app-icon/) are not covered by the license above."
       ]
