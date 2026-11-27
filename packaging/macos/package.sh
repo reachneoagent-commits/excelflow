@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # Build, sign and (optionally) notarize the macOS release artifacts:
 #
-#   $DIST/excelflow-<version>-macos-<arch>.dmg          Excelflow.app on a drag-to-Applications DMG
-#   $DIST/excelflow-cli-<version>-macos-<arch>.zip      the headless CLI
+#   $DIST/gridcraft-<version>-macos-<arch>.dmg          Excelflow.app on a drag-to-Applications DMG
+#   $DIST/gridcraft-cli-<version>-macos-<arch>.zip      the headless CLI
 #
 # Usage: packaging/macos/package.sh [--arch universal|aarch64|x86_64] [--skip-build]
 #
@@ -40,8 +40,8 @@ IDENTITY="${MACOS_SIGN_IDENTITY:--}"
 SHORT_VERSION="${VERSION%%-*}"
 WORK="$CARGO_TARGET_DIR/macos-package"
 APP="$WORK/Excelflow.app"
-DMG="$DIST/excelflow-$VERSION-macos-$ARCH.dmg"
-CLI_ZIP="$DIST/excelflow-cli-$VERSION-macos-$ARCH.zip"
+DMG="$DIST/gridcraft-$VERSION-macos-$ARCH.dmg"
+CLI_ZIP="$DIST/gridcraft-cli-$VERSION-macos-$ARCH.zip"
 
 NOTARIZE=0
 if [[ "$IDENTITY" = "-" ]]; then
@@ -116,13 +116,13 @@ echo "==> assembling $APP"
 mkdir -p "$APP/Contents/MacOS" "$APP/Contents/Resources"
 # Executable and icon carry the display name (CFBundleExecutable / CFBundleIconFile).
 cp "$WORK/bin/gridcraft" "$APP/Contents/MacOS/Excelflow"
-cp "$ROOT/assets/app-icon/excelflow.icns" "$APP/Contents/Resources/Excelflow.icns"
+cp "$ROOT/assets/app-icon/gridcraft.icns" "$APP/Contents/Resources/Excelflow.icns"
 # Bundled dependency font notices are installed before the app is signed.
 cp "$ROOT/NOTICE" "$ROOT/ATTRIBUTION.md" "$APP/Contents/Resources/"
 # Licences of the embedded craft-fonts fonts (only when built with CRAFT_FONTS_DIR).
 copy_font_licences "$APP/Contents/Resources"
 sed -e "s/@VERSION@/$VERSION/g" -e "s/@SHORT_VERSION@/$SHORT_VERSION/g" \
-  -e "s/@BUILD_SHA@/${EXCELFLOW_BUILD_SHA:-unknown}/g" \
+  -e "s/@BUILD_SHA@/${GRIDCRAFT_BUILD_SHA:-unknown}/g" \
   "$HERE/Info.plist.in" >"$APP/Contents/Info.plist"
 plutil -lint "$APP/Contents/Info.plist"
 printf 'APPL????' >"$APP/Contents/PkgInfo"
@@ -169,7 +169,7 @@ fi
 
 # ---- CLI ---------------------------------------------------------------------------------------
 echo "==> building $CLI_ZIP"
-CLI_DIR="$WORK/excelflow-cli-$VERSION-macos-$ARCH"
+CLI_DIR="$WORK/gridcraft-cli-$VERSION-macos-$ARCH"
 mkdir -p "$CLI_DIR"
 cp "$WORK/bin/gridcraft-cli" "$CLI_DIR/"
 copy_docs "$CLI_DIR"

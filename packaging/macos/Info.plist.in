@@ -69,7 +69,7 @@
   <key>NSHumanReadableCopyright</key>
   <string>Copyright © Reach Neo. MIT OR Apache-2.0.</string>
 
-  <!-- Files GridCraft opens. Rank Alternate: it's offered under "Open With" without taking
+  <!-- Files Excelflow opens. Rank Alternate: it's offered under "Open With" without taking
        over the default app (Numbers, another spreadsheet) for these types. -->
   <key>CFBundleDocumentTypes</key>
   <array>

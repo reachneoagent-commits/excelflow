@@ -8,6 +8,7 @@ plan/
 /.claude/
 /target-*/
 /craft-fonts/
+# FlowApps release builds and editor files
 /*.dmg
 /*.msi
 *.exe
