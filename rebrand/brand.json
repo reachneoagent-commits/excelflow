@@ -7,21 +7,6 @@
   "edits": [
     {
       "file": "apps/gridcraft/src/main.rs",
-      "find": "Application Support/GridCraft\"",
-      "replace": "Application Support/Excelflow\""
-    },
-    {
-      "file": "apps/gridcraft/src/main.rs",
-      "find": "\"GridCraft\"",
-      "replace": "\"Excelflow\""
-    },
-    {
-      "file": "apps/gridcraft/src/main.rs",
-      "find": "c.join(\"gridcraft\")",
-      "replace": "c.join(\"excelflow\")"
-    },
-    {
-      "file": "apps/gridcraft/src/main.rs",
       "find": "\"GridCraft update helper failed",
       "replace": "\"Excelflow update helper failed"
     },
@@ -32,18 +17,58 @@
     },
     {
       "file": "apps/gridcraft/src/main.rs",
-      "find": "log::info!(\"GridCraft {}, log file",
-      "replace": "log::info!(\"Excelflow {}, log file"
+      "find": "\"GridCraft doesn't open",
+      "replace": "\"Excelflow doesn't open"
     },
     {
-      "file": "apps/gridcraft/src/main.rs",
+      "file": "apps/gridcraft/src/app_dirs.rs",
+      "find": "Application Support/GridCraft\"",
+      "replace": "Application Support/Excelflow\""
+    },
+    {
+      "file": "apps/gridcraft/src/app_dirs.rs",
+      "find": ".join(\"GridCraft\")",
+      "replace": ".join(\"Excelflow\")"
+    },
+    {
+      "file": "apps/gridcraft/src/app_dirs.rs",
+      "find": ".join(\"gridcraft\")",
+      "replace": ".join(\"excelflow\")"
+    },
+    {
+      "file": "crates/ui-egui/src/channel.rs",
       "find": "\"ai.storyteller.gridcraft\"",
       "replace": "\"com.excelflow.app\""
     },
     {
-      "file": "apps/gridcraft/src/main.rs",
-      "find": "\"GridCraft doesn't open",
-      "replace": "\"Excelflow doesn't open"
+      "file": "crates/ui-egui/src/channel.rs",
+      "find": "GridCraft",
+      "replace": "Excelflow"
+    },
+    {
+      "file": "crates/ui-egui/src/framework.rs",
+      "find": "const APP_ID: &str = \"ai.storyteller.gridcraft\";",
+      "replace": "const APP_ID: &str = \"com.excelflow.app\";"
+    },
+    {
+      "file": "crates/ui-egui/src/framework.rs",
+      "find": "name: \"GridCraft\"",
+      "replace": "name: \"Excelflow\""
+    },
+    {
+      "file": "apps/gridcraft/src/native_menu.rs",
+      "find": "Submenu::new(\"GridCraft\"",
+      "replace": "Submenu::new(\"Excelflow\""
+    },
+    {
+      "file": "apps/gridcraft/src/native_menu.rs",
+      "find": "\"About GridCraft\"",
+      "replace": "\"About Excelflow\""
+    },
+    {
+      "file": "apps/gridcraft/src/native_menu.rs",
+      "find": "\"Quit GridCraft\"",
+      "replace": "\"Quit Excelflow\""
     },
     {
       "file": "packaging/macos/Info.plist.in",
@@ -89,6 +114,11 @@
       "file": "packaging/windows/gridcraft.wxs",
       "find": "GridCraft",
       "replace": "Excelflow"
+    },
+    {
+      "file": "apps/gridcraft/tests/mac_menu_appkit.rs",
+      "find": "assert_eq!(tops, [\"GridCraft\",",
+      "replace": "assert_eq!(tops, [\"Excelflow\","
     }
   ],
   "prepend": [
