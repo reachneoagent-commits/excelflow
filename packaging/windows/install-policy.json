@@ -1,6 +1,6 @@
 {
   "id": "gridcraft",
-  "name": "GridCraft",
+  "name": "Excelflow",
   "upgradeCode": "5511327B-F305-41BE-92D0-EB84944E7C4D",
   "sources": [
     "gridcraft.wxs"
@@ -21,127 +21,127 @@
     ],
     [
       "-1",
-      "Software\\Classes\\GridCraft.Workbook",
+      "Software\\Classes\\Excelflow.Workbook",
       "",
-      "GridCraft Workbook"
+      "Excelflow Workbook"
     ],
     [
       "-1",
-      "Software\\Classes\\GridCraft.Workbook\\DefaultIcon",
+      "Software\\Classes\\Excelflow.Workbook\\DefaultIcon",
       "",
       "\"[#GridcraftExe]\",0"
     ],
     [
       "-1",
-      "Software\\Classes\\GridCraft.Workbook\\shell\\open\\command",
+      "Software\\Classes\\Excelflow.Workbook\\shell\\open\\command",
       "",
       "\"[#GridcraftExe]\" \"%1\""
     ],
     [
       "-1",
-      "Software\\Classes\\GridCraft.TextData",
+      "Software\\Classes\\Excelflow.TextData",
       "",
-      "GridCraft Text Data"
+      "Excelflow Text Data"
     ],
     [
       "-1",
-      "Software\\Classes\\GridCraft.TextData\\DefaultIcon",
+      "Software\\Classes\\Excelflow.TextData\\DefaultIcon",
       "",
       "\"[#GridcraftExe]\",0"
     ],
     [
       "-1",
-      "Software\\Classes\\GridCraft.TextData\\shell\\open\\command",
+      "Software\\Classes\\Excelflow.TextData\\shell\\open\\command",
       "",
       "\"[#GridcraftExe]\" \"%1\""
     ],
     [
       "-1",
       "Software\\Classes\\.xlsx\\OpenWithProgids",
-      "GridCraft.Workbook",
-      "GridCraft.Workbook"
+      "Excelflow.Workbook",
+      "Excelflow.Workbook"
     ],
     [
       "-1",
       "Software\\Classes\\.xlsm\\OpenWithProgids",
-      "GridCraft.Workbook",
-      "GridCraft.Workbook"
+      "Excelflow.Workbook",
+      "Excelflow.Workbook"
     ],
     [
       "-1",
       "Software\\Classes\\.xlsb\\OpenWithProgids",
-      "GridCraft.Workbook",
-      "GridCraft.Workbook"
+      "Excelflow.Workbook",
+      "Excelflow.Workbook"
     ],
     [
       "-1",
       "Software\\Classes\\.ods\\OpenWithProgids",
-      "GridCraft.Workbook",
-      "GridCraft.Workbook"
+      "Excelflow.Workbook",
+      "Excelflow.Workbook"
     ],
     [
       "-1",
       "Software\\Classes\\.csv\\OpenWithProgids",
-      "GridCraft.TextData",
-      "GridCraft.TextData"
+      "Excelflow.TextData",
+      "Excelflow.TextData"
     ],
     [
       "-1",
       "Software\\Classes\\.tsv\\OpenWithProgids",
-      "GridCraft.TextData",
-      "GridCraft.TextData"
+      "Excelflow.TextData",
+      "Excelflow.TextData"
     ],
     [
       "-1",
-      "Software\\GridCraft\\Capabilities",
+      "Software\\Excelflow\\Capabilities",
       "ApplicationName",
-      "GridCraft"
+      "Excelflow"
     ],
     [
       "-1",
-      "Software\\GridCraft\\Capabilities",
+      "Software\\Excelflow\\Capabilities",
       "ApplicationDescription",
       "Open-source spreadsheet for .xlsx, CSV and TSV files"
     ],
     [
       "-1",
-      "Software\\GridCraft\\Capabilities\\FileAssociations",
+      "Software\\Excelflow\\Capabilities\\FileAssociations",
       ".xlsx",
-      "GridCraft.Workbook"
+      "Excelflow.Workbook"
     ],
     [
       "-1",
-      "Software\\GridCraft\\Capabilities\\FileAssociations",
+      "Software\\Excelflow\\Capabilities\\FileAssociations",
       ".xlsm",
-      "GridCraft.Workbook"
+      "Excelflow.Workbook"
     ],
     [
       "-1",
-      "Software\\GridCraft\\Capabilities\\FileAssociations",
+      "Software\\Excelflow\\Capabilities\\FileAssociations",
       ".csv",
-      "GridCraft.TextData"
+      "Excelflow.TextData"
     ],
     [
       "-1",
-      "Software\\GridCraft\\Capabilities\\FileAssociations",
+      "Software\\Excelflow\\Capabilities\\FileAssociations",
       ".tsv",
-      "GridCraft.TextData"
+      "Excelflow.TextData"
     ],
     [
       "-1",
       "Software\\RegisteredApplications",
-      "GridCraft",
-      "Software\\GridCraft\\Capabilities"
+      "Excelflow",
+      "Software\\Excelflow\\Capabilities"
     ],
     [
       "-1",
-      "Software\\GridCraft\\Installer",
+      "Software\\Excelflow\\Installer",
       "DesktopShortcut",
       "[DESKTOPSHORTCUT]"
     ],
     [
       "-1",
-      "Software\\GridCraft\\Installer",
+      "Software\\Excelflow\\Installer",
       "DesktopShortcutComponent",
       "#1"
     ]
