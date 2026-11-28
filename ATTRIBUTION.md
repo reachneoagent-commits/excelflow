@@ -38,6 +38,12 @@ Generated-in-code art is original and has no file to list: the UI icon set (`cra
 | `assets/app-icon/hicolor/256x256/apps/ai.storyteller.gridcraft.png` | GridCraft contributors | original (hand-written SVG; `packaging/icons.sh`) | MIT OR Apache-2.0 (`assets/app-icon/LICENSE.txt`) | Placeholder icon, Linux hicolor render |
 | `assets/app-icon/hicolor/512x512/apps/ai.storyteller.gridcraft.png` | GridCraft contributors | original (hand-written SVG; `packaging/icons.sh`) | MIT OR Apache-2.0 (`assets/app-icon/LICENSE.txt`) | Placeholder icon, Linux hicolor render |
 | `assets/app-icon/hicolor/scalable/apps/ai.storyteller.gridcraft.svg` | GridCraft contributors | original (hand-written SVG; `packaging/icons.sh`) | MIT OR Apache-2.0 (`assets/app-icon/LICENSE.txt`) | Placeholder icon, copy of gridcraft.svg |
+| `assets/app-icon/gridcraft-nightly.svg` | GridCraft contributors | original (the stable placeholder artwork with only its field colour deepened; `packaging/nightly-icons.py`) | MIT OR Apache-2.0 (`assets/app-icon/LICENSE.txt`) | Nightly (nightly-v1) icon master |
+| `assets/app-icon/gridcraft-nightly.png` | GridCraft contributors | original (rendered from `gridcraft-nightly.svg`; `packaging/nightly-icons.py`) | MIT OR Apache-2.0 (`assets/app-icon/LICENSE.txt`) | Nightly icon, 256 px (Linux tar and runtime window icon) |
+| `assets/app-icon/gridcraft-nightly-1024.png` | GridCraft contributors | original (rendered from `gridcraft-nightly.svg` on the 824/1024 Mac grid; `packaging/nightly-icons.py`) | MIT OR Apache-2.0 (`assets/app-icon/LICENSE.txt`) | Nightly icon, padded Mac master |
+| `assets/app-icon/gridcraft-nightly.icns` | GridCraft contributors | original (PNG slots packed from `gridcraft-nightly.svg` renders; `packaging/nightly-icons.py`) | MIT OR Apache-2.0 (`assets/app-icon/LICENSE.txt`) | Nightly macOS bundle icon |
+| `assets/app-icon/gridcraft-nightly.ico` | GridCraft contributors | original (rendered from `gridcraft-nightly.svg`; `packaging/nightly-icons.py`) | MIT OR Apache-2.0 (`assets/app-icon/LICENSE.txt`) | Nightly Windows exe icon |
+| `assets/app-icon/nightly-provenance.json` | GridCraft contributors | original (written by `packaging/nightly-icons.py`) | MIT OR Apache-2.0 | Hashes and method of the nightly icon derivatives |
 | `assets/app-icon/README.md` | GridCraft contributors | original | MIT OR Apache-2.0 | Icon documentation |
 | `assets/app-icon/LICENSE.txt` | (licence text) | original | — | Licence of the app icon files |
 | `docs/images/hero-sales.png` | GridCraft contributors | screenshot of GridCraft rendered offscreen (`crates/ui-egui/examples/snapshot.rs`) showing an original sample workbook | MIT OR Apache-2.0 | README screenshot; no third-party content |
@@ -51,3 +57,23 @@ Generated-in-code art is original and has no file to list: the UI icon set (`cra
 | Unicode values of the Symbol encoding in `crates/pdf/src/symbol.rs` (the code-to-character map; numbers only, no file copied) | Unicode, Inc. | `symbol.txt`, "Adobe Symbol Encoding to Unicode", table version 1.0 (2011-07-12), at unicode.org/Public/MAPPINGS/VENDORS/ADOBE/ | Unicode, Inc.'s notice in the file: "Unicode, Inc. hereby grants the right to freely use the information supplied in this file in the creation of products supporting the Unicode Standard, and to make copies of this file in any form for internal or external distribution as long as this notice remains attached." The file is provided as-is, without warranties | Separate from Adobe's Core 14 notice (previous row), which covers the character codes and widths; the Unicode values come from this table |
 
 Arabic PDF text uses Noto Sans Arabic from the optional [craft-fonts build input](https://github.com/storytold/craft-fonts), pinned by the release workflow. Author: The Noto Project Authors. Licence: SIL Open Font License 1.1. Native unbundled export uses an installed Noto Sans Arabic face. No new asset file is committed.
+
+## Excelflow (FlowApps) brand files
+
+These files are the Excelflow and FlowApps name and mark, added by the Excelflow fork (`rebrand/`). They are trademarks of Reach Neo, not open source, and not covered by the licence of this repository (see `NOTICE`).
+
+| Asset | Author | Source | Licence | Notes |
+|---|---|---|---|---|
+| `assets/header-dark.png` | Reach Neo | FlowApps brand kit | Excelflow brand, not open source (see `NOTICE`) | README header image |
+| `assets/header-light.png` | Reach Neo | FlowApps brand kit | Excelflow brand, not open source (see `NOTICE`) | README header image |
+| `brand/brand-color.png` | Reach Neo | FlowApps brand kit | Excelflow brand, not open source (see `NOTICE`) | Excelflow brand kit |
+| `brand/excelflow-brand.ai` | Reach Neo | FlowApps brand kit | Excelflow brand, not open source (see `NOTICE`) | Excelflow brand kit |
+| `brand/logoblk.svg` | Reach Neo | FlowApps brand kit | Excelflow brand, not open source (see `NOTICE`) | Excelflow brand kit |
+| `brand/logocol1.svg` | Reach Neo | FlowApps brand kit | Excelflow brand, not open source (see `NOTICE`) | Excelflow brand kit |
+| `brand/logocol2.svg` | Reach Neo | FlowApps brand kit | Excelflow brand, not open source (see `NOTICE`) | Excelflow brand kit |
+| `brand/logowht.svg` | Reach Neo | FlowApps brand kit | Excelflow brand, not open source (see `NOTICE`) | Excelflow brand kit |
+| `rebrand/app-icon/gridcraft-1024.png` | Reach Neo | FlowApps brand kit | Excelflow brand, not open source (see `NOTICE`) | Excelflow app icon; `rebrand/apply.py` copies it over the upstream icon in `assets/app-icon/` |
+| `rebrand/app-icon/gridcraft-macos-512.png` | Reach Neo | FlowApps brand kit | Excelflow brand, not open source (see `NOTICE`) | Excelflow app icon; `rebrand/apply.py` copies it over the upstream icon in `assets/app-icon/` |
+| `rebrand/app-icon/gridcraft.icns` | Reach Neo | FlowApps brand kit | Excelflow brand, not open source (see `NOTICE`) | Excelflow app icon; `rebrand/apply.py` copies it over the upstream icon in `assets/app-icon/` |
+| `rebrand/app-icon/gridcraft.ico` | Reach Neo | FlowApps brand kit | Excelflow brand, not open source (see `NOTICE`) | Excelflow app icon; `rebrand/apply.py` copies it over the upstream icon in `assets/app-icon/` |
+| `rebrand/app-icon/hicolor/256x256/apps/ai.storyteller.gridcraft.png` | Reach Neo | FlowApps brand kit | Excelflow brand, not open source (see `NOTICE`) | Excelflow app icon; `rebrand/apply.py` copies it over the upstream icon in `assets/app-icon/` |

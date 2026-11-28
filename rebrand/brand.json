@@ -7,21 +7,6 @@
   "edits": [
     {
       "file": "apps/gridcraft/src/main.rs",
-      "find": "Application Support/GridCraft\"",
-      "replace": "Application Support/Excelflow\""
-    },
-    {
-      "file": "apps/gridcraft/src/main.rs",
-      "find": "\"GridCraft\"",
-      "replace": "\"Excelflow\""
-    },
-    {
-      "file": "apps/gridcraft/src/main.rs",
-      "find": "c.join(\"gridcraft\")",
-      "replace": "c.join(\"excelflow\")"
-    },
-    {
-      "file": "apps/gridcraft/src/main.rs",
       "find": "\"GridCraft update helper failed",
       "replace": "\"Excelflow update helper failed"
     },
@@ -32,18 +17,58 @@
     },
     {
       "file": "apps/gridcraft/src/main.rs",
-      "find": "log::info!(\"GridCraft {}, log file",
-      "replace": "log::info!(\"Excelflow {}, log file"
+      "find": "\"GridCraft doesn't open",
+      "replace": "\"Excelflow doesn't open"
     },
     {
-      "file": "apps/gridcraft/src/main.rs",
+      "file": "apps/gridcraft/src/app_dirs.rs",
+      "find": "Application Support/GridCraft\"",
+      "replace": "Application Support/Excelflow\""
+    },
+    {
+      "file": "apps/gridcraft/src/app_dirs.rs",
+      "find": ".join(\"GridCraft\")",
+      "replace": ".join(\"Excelflow\")"
+    },
+    {
+      "file": "apps/gridcraft/src/app_dirs.rs",
+      "find": ".join(\"gridcraft\")",
+      "replace": ".join(\"excelflow\")"
+    },
+    {
+      "file": "crates/ui-egui/src/channel.rs",
       "find": "\"ai.storyteller.gridcraft\"",
       "replace": "\"com.excelflow.app\""
     },
     {
-      "file": "apps/gridcraft/src/main.rs",
-      "find": "\"GridCraft doesn't open",
-      "replace": "\"Excelflow doesn't open"
+      "file": "crates/ui-egui/src/channel.rs",
+      "find": "GridCraft",
+      "replace": "Excelflow"
+    },
+    {
+      "file": "crates/ui-egui/src/framework.rs",
+      "find": "const APP_ID: &str = \"ai.storyteller.gridcraft\";",
+      "replace": "const APP_ID: &str = \"com.excelflow.app\";"
+    },
+    {
+      "file": "crates/ui-egui/src/framework.rs",
+      "find": "name: \"GridCraft\"",
+      "replace": "name: \"Excelflow\""
+    },
+    {
+      "file": "apps/gridcraft/src/native_menu.rs",
+      "find": "Submenu::new(\"GridCraft\"",
+      "replace": "Submenu::new(\"Excelflow\""
+    },
+    {
+      "file": "apps/gridcraft/src/native_menu.rs",
+      "find": "\"About GridCraft\"",
+      "replace": "\"About Excelflow\""
+    },
+    {
+      "file": "apps/gridcraft/src/native_menu.rs",
+      "find": "\"Quit GridCraft\"",
+      "replace": "\"Quit Excelflow\""
     },
     {
       "file": "packaging/macos/Info.plist.in",
@@ -89,6 +114,50 @@
       "file": "packaging/windows/gridcraft.wxs",
       "find": "GridCraft",
       "replace": "Excelflow"
+    },
+    {
+      "file": "apps/gridcraft/tests/mac_menu_appkit.rs",
+      "find": "assert_eq!(tops, [\"GridCraft\",",
+      "replace": "assert_eq!(tops, [\"Excelflow\","
+    },
+    {
+      "file": "packaging/windows/install-policy.json",
+      "find": "GridCraft",
+      "replace": "Excelflow",
+      "why": "must match the names in the rebranded .wxs"
+    },
+    {
+      "file": "packaging/windows/check-install-policy.ps1",
+      "find": "$directories['CraftSuiteFolder'][1] -ne 'ArtCraft') { throw 'Expected the app under the ArtCraft suite folder.' }",
+      "replace": "$directories['CraftSuiteFolder'][1] -ne 'FlowApps') { throw 'Expected the app under the FlowApps suite folder.' }"
+    },
+    {
+      "file": "packaging/windows/check-install-policy.ps1",
+      "find": "ArtCraft\\$($policy.name)",
+      "replace": "FlowApps\\$($policy.name)",
+      "why": "Excelflow installs under the FlowApps suite folder"
+    },
+    {
+      "file": "packaging/windows/install-policy.wxi",
+      "find": "Key=\"Software\\GridCraft\"",
+      "replace": "Key=\"Software\\Excelflow\"",
+      "why": "read back the folder our .wxs writes under Software\\Excelflow"
+    },
+    {
+      "file": "packaging/windows/install-policy.wxi",
+      "find": "\\ArtCraft\\GridCraft\\",
+      "replace": "\\FlowApps\\Excelflow\\",
+      "why": "install into the FlowApps suite folder, as the .wxs and install-policy.json say"
+    },
+    {
+      "file": "packaging/windows/install-policy.wxi",
+      "find": "the ArtCraft folder",
+      "replace": "the FlowApps folder"
+    },
+    {
+      "file": ".github/workflows/windows-arm64.yml",
+      "find": "install-relative-path: Programs/ArtCraft/GridCraft",
+      "replace": "install-relative-path: Programs/FlowApps/Excelflow"
     }
   ],
   "prepend": [
@@ -152,6 +221,32 @@
         ".idea/",
         "*.swp",
         "*.swo"
+      ]
+    },
+    {
+      "file": "ATTRIBUTION.md",
+      "marker": "## Excelflow (FlowApps) brand files",
+      "lines": [
+        "",
+        "## Excelflow (FlowApps) brand files",
+        "",
+        "These files are the Excelflow and FlowApps name and mark, added by the Excelflow fork (`rebrand/`). They are trademarks of Reach Neo, not open source, and not covered by the licence of this repository (see `NOTICE`).",
+        "",
+        "| Asset | Author | Source | Licence | Notes |",
+        "|---|---|---|---|---|",
+        "| `assets/header-dark.png` | Reach Neo | FlowApps brand kit | Excelflow brand, not open source (see `NOTICE`) | README header image |",
+        "| `assets/header-light.png` | Reach Neo | FlowApps brand kit | Excelflow brand, not open source (see `NOTICE`) | README header image |",
+        "| `brand/brand-color.png` | Reach Neo | FlowApps brand kit | Excelflow brand, not open source (see `NOTICE`) | Excelflow brand kit |",
+        "| `brand/excelflow-brand.ai` | Reach Neo | FlowApps brand kit | Excelflow brand, not open source (see `NOTICE`) | Excelflow brand kit |",
+        "| `brand/logoblk.svg` | Reach Neo | FlowApps brand kit | Excelflow brand, not open source (see `NOTICE`) | Excelflow brand kit |",
+        "| `brand/logocol1.svg` | Reach Neo | FlowApps brand kit | Excelflow brand, not open source (see `NOTICE`) | Excelflow brand kit |",
+        "| `brand/logocol2.svg` | Reach Neo | FlowApps brand kit | Excelflow brand, not open source (see `NOTICE`) | Excelflow brand kit |",
+        "| `brand/logowht.svg` | Reach Neo | FlowApps brand kit | Excelflow brand, not open source (see `NOTICE`) | Excelflow brand kit |",
+        "| `rebrand/app-icon/gridcraft-1024.png` | Reach Neo | FlowApps brand kit | Excelflow brand, not open source (see `NOTICE`) | Excelflow app icon; `rebrand/apply.py` copies it over the upstream icon in `assets/app-icon/` |",
+        "| `rebrand/app-icon/gridcraft-macos-512.png` | Reach Neo | FlowApps brand kit | Excelflow brand, not open source (see `NOTICE`) | Excelflow app icon; `rebrand/apply.py` copies it over the upstream icon in `assets/app-icon/` |",
+        "| `rebrand/app-icon/gridcraft.icns` | Reach Neo | FlowApps brand kit | Excelflow brand, not open source (see `NOTICE`) | Excelflow app icon; `rebrand/apply.py` copies it over the upstream icon in `assets/app-icon/` |",
+        "| `rebrand/app-icon/gridcraft.ico` | Reach Neo | FlowApps brand kit | Excelflow brand, not open source (see `NOTICE`) | Excelflow app icon; `rebrand/apply.py` copies it over the upstream icon in `assets/app-icon/` |",
+        "| `rebrand/app-icon/hicolor/256x256/apps/ai.storyteller.gridcraft.png` | Reach Neo | FlowApps brand kit | Excelflow brand, not open source (see `NOTICE`) | Excelflow app icon; `rebrand/apply.py` copies it over the upstream icon in `assets/app-icon/` |"
       ]
     }
   ]
