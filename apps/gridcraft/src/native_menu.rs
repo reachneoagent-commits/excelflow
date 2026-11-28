@@ -221,8 +221,8 @@ fn select_theme(app: &mut SheetApp, id: &str) -> bool {
 impl NativeMenu {
     pub fn install(ctx: &egui::Context) -> NativeMenu {
         let menu = Menu::new();
-        let app_menu = Submenu::new("GridCraft", true);
-        let about = MenuItem::with_id("dialog:about", "About GridCraft", true, None);
+        let app_menu = Submenu::new("Excelflow", true);
+        let about = MenuItem::with_id("dialog:about", "About Excelflow", true, None);
         let _ = app_menu.append_items(&[
             &about,
             &PredefinedMenuItem::separator(),
@@ -232,7 +232,7 @@ impl NativeMenu {
             &PredefinedMenuItem::hide_others(None),
             &PredefinedMenuItem::show_all(None),
             &PredefinedMenuItem::separator(),
-            &MenuItem::with_id(QUIT, "Quit GridCraft", true, Accelerator::from_str("CMD+Q").ok()),
+            &MenuItem::with_id(QUIT, "Quit Excelflow", true, Accelerator::from_str("CMD+Q").ok()),
         ]);
         let _ = menu.append(&app_menu);
         let mut theme_items = Vec::new();
